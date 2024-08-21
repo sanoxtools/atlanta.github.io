@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlanta RP</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            background-image: url('background.jpg'); /* URL de l'image de fond */
+            background-size: cover; /* Couvre toute la page */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Empêche la répétition de l'image */
+        }
+
+        header {
+            width: 100%; /* Prend toute la largeur de la page */
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Aligne les éléments à gauche */
+            background: none; /* Fond transparent pour le header */
+        }
+
+        .creators {
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #fff; /* Couleur du texte en blanc pour contraste */
+            background-color: #333; /* Fond noir pour les blocs des créateurs */
+            opacity: 0.9; /* Opacité pour un effet visuel */
+            width: fit-content;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ombre pour le relief */
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 10px 0 30px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+
+        .discord-link {
+            margin-top: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+            color: #fff; /* Couleur du texte en blanc pour le lien Discord */
+            background-color: #7289da; /* Fond bleu pour le bouton Discord */
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .discord-link:hover {
+            background-color: #5a6abf; /* Couleur de fond au survol */
+            color: #fff; /* Assure que le texte reste blanc */
+        }
+
+        .discord-link a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        .discord-link a:hover {
+            color: #fff;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .image-item {
+            text-align: center;
+            max-width: 200px; /* Limite la largeur de chaque élément image */
+        }
+
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .spoil-text {
+            margin-top: 8px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="creators">Créateur: SANOX</div>
+        <div class="creators">Créateur: VENOX</div>
+        <div class="creators">Créateur: WOODY</div>
+        <div class="discord-link">
+            <a href="https://discord.gg/xUHJMN5Yu8" target="_blank">Rejoindre le Discord</a>
+        </div>
+    </header>
+    
+    <h1>Atlanta RP</h1>
+    <h2>Spoils avant l'ouverture</h2>
+
+    <div class="image-container">
+        <!-- Image 1 -->
+        <div class="image-item">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="spoil-text">Spoil 1</div>
+        </div>
+        
+        <!-- Image 2 -->
+        <div class="image-item">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="spoil-text">Spoil 2</div>
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="image-item">
+            <img src="image3.jpg" alt="Image 3">
+            <div class="spoil-text">Spoil 3</div>
+        </div>
+    </div>
+</body>
+</html>
